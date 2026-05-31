@@ -97,12 +97,14 @@ suma total de impuestos. Por ejemplo:
 from bills import *
 from util_package.bill_manager import BillManager
 
+
+
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
-#bill_manager = BillManager()
-#bills = bill_manager.create_bills_example()
-#statistics = Statistics(bills)
-#statistics.show()
-#print(statistics.find_top_sell_product())
-#print(statistics.find_buyer_lowest_total_purchases())
-#print(statistics.find_top_two_sellers())
-#print(statistics.order_products_by_tax(OrderType.DES))
+bill_manager = BillManager()
+bills = bill_manager.create_bills_example()
+statistics = Statistics(bills)
+statistics.show()
+print(statistics.find_top_sell_product())
+print(statistics.find_buyer_lowest_total_purchases())
+print(statistics.find_top_two_sellers())
+print(statistics.order_products_by_tax(OrderType.DES))
